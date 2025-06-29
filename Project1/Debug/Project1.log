@@ -1,0 +1,67 @@
+﻿  Graph.cpp
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.cpp(56,26): warning C4244: '=': conversion from '_Ty1' to 'int', possible loss of data
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.cpp(56,26): warning C4244:         with
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.cpp(56,26): warning C4244:         [
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.cpp(56,26): warning C4244:             _Ty1=double
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.cpp(56,26): warning C4244:         ]
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.cpp(57,26): warning C4244: '=': conversion from '_Ty1' to 'int', possible loss of data
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.cpp(57,26): warning C4244:         with
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.cpp(57,26): warning C4244:         [
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.cpp(57,26): warning C4244:             _Ty1=double
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.cpp(57,26): warning C4244:         ]
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.cpp(345,2): warning C4065: switch statement contains 'default' but no 'case' labels
+  GUI.cpp
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.h(102,33): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file '../../WindowsProject2/WindowsProject2/GUI.cpp')
+      C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.h(102,33):
+      the template instantiation context (the oldest one first) is
+          C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\GUI.h(95,21):
+          see reference to class template instantiation 'Graph_lib::Vector_ref<Graph_lib::Button>' being compiled
+          C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Graph.h(102,3):
+          while compiling class template member function 'Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)'
+              C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\GUI.cpp(57,1):
+              see the first reference to 'Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref' in 'Graph_lib::Menu::Menu'
+  
+  Window.cpp
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Window.cpp(59,17): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kirti\source\repos\WindowsProject2\WindowsProject2\Window.cpp(61,15): warning C4018: '<': signed/unsigned mismatch
+  cpp_415.cpp
+  Generating Code...
+Graph.obj : error LNK2019: unresolved external symbol "protected: void __thiscall Fl_Image::draw_empty(int,int)" (?draw_empty@Fl_Image@@IAEXHH@Z) referenced in function "public: virtual void __thiscall Graph_lib::Bad_image::draw(int,int,int,int,int,int)" (?draw@Bad_image@Graph_lib@@UAEXHHHHHH@Z)
+Graph.obj : error LNK2019: unresolved external symbol "public: __thiscall Fl_Image::Fl_Image(int,int,int)" (??0Fl_Image@@QAE@HHH@Z) referenced in function "public: __thiscall Graph_lib::Bad_image::Bad_image(int,int)" (??0Bad_image@Graph_lib@@QAE@HH@Z)
+Graph.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall Fl_Image::~Fl_Image(void)" (??1Fl_Image@@UAE@XZ) referenced in function "public: virtual __thiscall Graph_lib::Bad_image::~Bad_image(void)" (??1Bad_image@Graph_lib@@UAE@XZ)
+Graph.obj : error LNK2001: unresolved external symbol "public: virtual class Fl_Image * __thiscall Fl_Image::copy(int,int)" (?copy@Fl_Image@@UAEPAV1@HH@Z)
+Graph.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Fl_Image::color_average(unsigned int,float)" (?color_average@Fl_Image@@UAEXIM@Z)
+Graph.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Fl_Image::desaturate(void)" (?desaturate@Fl_Image@@UAEXXZ)
+Graph.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Fl_Image::label(class Fl_Widget *)" (?label@Fl_Image@@UAEXPAVFl_Widget@@@Z)
+Graph.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Fl_Image::label(struct Fl_Menu_Item *)" (?label@Fl_Image@@UAEXPAUFl_Menu_Item@@@Z)
+Graph.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Fl_Image::uncache(void)" (?uncache@Fl_Image@@UAEXXZ)
+Graph.obj : error LNK2019: unresolved external symbol "void __cdecl fl_draw(char const *,int,int)" (?fl_draw@@YAXPBDHH@Z) referenced in function "public: virtual void __thiscall Graph_lib::Text::draw_lines(void)const " (?draw_lines@Text@Graph_lib@@UBEXXZ)
+Graph.obj : error LNK2001: unresolved external symbol "class Fl_Graphics_Driver * fl_graphics_driver" (?fl_graphics_driver@@3PAVFl_Graphics_Driver@@A)
+cpp_415.obj : error LNK2001: unresolved external symbol "class Fl_Graphics_Driver * fl_graphics_driver" (?fl_graphics_driver@@3PAVFl_Graphics_Driver@@A)
+GUI.obj : error LNK2019: unresolved external symbol "public: __thiscall Fl_Button::Fl_Button(int,int,int,int,char const *)" (??0Fl_Button@@QAE@HHHHPBD@Z) referenced in function "public: virtual void __thiscall Graph_lib::Button::attach(class Graph_lib::Window &)" (?attach@Button@Graph_lib@@UAEXAAVWindow@2@@Z)
+GUI.obj : error LNK2019: unresolved external symbol "public: int __thiscall Fl_Input_::value(char const *)" (?value@Fl_Input_@@QAEHPBD@Z) referenced in function "public: void __thiscall Graph_lib::Out_box::put(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?put@Out_box@Graph_lib@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+GUI.obj : error LNK2019: unresolved external symbol "public: __thiscall Fl_Input::Fl_Input(int,int,int,int,char const *)" (??0Fl_Input@@QAE@HHHHPBD@Z) referenced in function "public: virtual void __thiscall Graph_lib::In_box::attach(class Graph_lib::Window &)" (?attach@In_box@Graph_lib@@UAEXAAVWindow@2@@Z)
+GUI.obj : error LNK2019: unresolved external symbol "public: __thiscall Fl_Output::Fl_Output(int,int,int,int,char const *)" (??0Fl_Output@@QAE@HHHHPBD@Z) referenced in function "public: virtual void __thiscall Graph_lib::Out_box::attach(class Graph_lib::Window &)" (?attach@Out_box@Graph_lib@@UAEXAAVWindow@2@@Z)
+Window.obj : error LNK2019: unresolved external symbol "public: static int __cdecl Fl::run(void)" (?run@Fl@@SAHXZ) referenced in function "int __cdecl Graph_lib::gui_main(void)" (?gui_main@Graph_lib@@YAHXZ)
+Window.obj : error LNK2019: unresolved external symbol "public: void __thiscall Fl_Group::begin(void)" (?begin@Fl_Group@@QAEXXZ) referenced in function "public: void __thiscall Graph_lib::Window::attach(class Graph_lib::Widget &)" (?attach@Window@Graph_lib@@QAEXAAVWidget@2@@Z)
+Window.obj : error LNK2019: unresolved external symbol "public: void __thiscall Fl_Group::end(void)" (?end@Fl_Group@@QAEXXZ) referenced in function "public: void __thiscall Graph_lib::Window::attach(class Graph_lib::Widget &)" (?attach@Window@Graph_lib@@QAEXAAVWidget@2@@Z)
+Window.obj : error LNK2019: unresolved external symbol "protected: virtual void __thiscall Fl_Window::draw(void)" (?draw@Fl_Window@@MAEXXZ) referenced in function "protected: virtual void __thiscall Graph_lib::Window::draw(void)" (?draw@Window@Graph_lib@@MAEXXZ)
+Window.obj : error LNK2001: unresolved external symbol "protected: virtual void __thiscall Fl_Window::flush(void)" (?flush@Fl_Window@@MAEXXZ)
+cpp_415.obj : error LNK2001: unresolved external symbol "protected: virtual void __thiscall Fl_Window::flush(void)" (?flush@Fl_Window@@MAEXXZ)
+Window.obj : error LNK2019: unresolved external symbol "public: __thiscall Fl_Window::Fl_Window(int,int,char const *)" (??0Fl_Window@@QAE@HHPBD@Z) referenced in function "public: __thiscall Graph_lib::Window::Window(int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0Window@Graph_lib@@QAE@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Window.obj : error LNK2019: unresolved external symbol "public: __thiscall Fl_Window::Fl_Window(int,int,int,int,char const *)" (??0Fl_Window@@QAE@HHHHPBD@Z) referenced in function "public: __thiscall Graph_lib::Window::Window(struct Graph_lib::Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0Window@Graph_lib@@QAE@UPoint@1@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Window.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall Fl_Window::~Fl_Window(void)" (??1Fl_Window@@UAE@XZ) referenced in function __unwindfunclet$??0Window@Graph_lib@@QAE@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0
+cpp_415.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall Fl_Window::~Fl_Window(void)" (??1Fl_Window@@UAE@XZ)
+Window.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall Fl_Window::handle(int)" (?handle@Fl_Window@@UAEHH@Z)
+cpp_415.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall Fl_Window::handle(int)" (?handle@Fl_Window@@UAEHH@Z)
+Window.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Fl_Window::resize(int,int,int,int)" (?resize@Fl_Window@@UAEXHHHH@Z)
+cpp_415.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Fl_Window::resize(int,int,int,int)" (?resize@Fl_Window@@UAEXHHHH@Z)
+Window.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Fl_Window::show(void)" (?show@Fl_Window@@UAEXXZ)
+cpp_415.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Fl_Window::show(void)" (?show@Fl_Window@@UAEXXZ)
+Window.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Fl_Window::hide(void)" (?hide@Fl_Window@@UAEXXZ)
+cpp_415.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Fl_Window::hide(void)" (?hide@Fl_Window@@UAEXXZ)
+cpp_415.obj : error LNK2019: unresolved external symbol "public: static int __cdecl Fl::wait(void)" (?wait@Fl@@SAHXZ) referenced in function "public: void __thiscall Simple_window::wait_for_button(void)" (?wait_for_button@Simple_window@@QAEXXZ)
+cpp_415.obj : error LNK2019: unresolved external symbol "public: static void __cdecl Fl::redraw(void)" (?redraw@Fl@@SAXXZ) referenced in function "public: void __thiscall Simple_window::wait_for_button(void)" (?wait_for_button@Simple_window@@QAEXXZ)
+MSVCRTD.lib(exe_winmain.obj) : error LNK2019: unresolved external symbol _WinMain@16 referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\kirti\source\repos\Project1\Debug\Project1.exe : fatal error LNK1120: 30 unresolved externals
