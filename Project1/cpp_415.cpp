@@ -6,23 +6,31 @@ int main(int argc, char** argv)
 {
 	using namespace Graph_lib;
 
-	Point x{ 100,100 };
+	Point p{ 100,100 };
 
-	Simple_window win1{ x,600,400,"two lines" };
+	Simple_window win1{ p,600,400,"two lines" };
+	Lines x;
 
-	Line horizontal{ x, Point{200,100} };
+	x.add(Point{ 100,100 }, Point{ 200,100 });
+	x.add(Point{ 150,50 }, Point{ 150,150 });
 
-	Line vertical{ Point{150,50}, Point{150,150} };
-
-	win1.attach(horizontal);
-	win1.attach(vertical);
-
+	win1.attach(x);
+	
 	win1.wait_for_button();
 
 
 	return 0;
 }
 
+/*
+struct Lines : Shape {
+	Lines() {}
+	Lines(initializer_list<Point> lst);
+
+	void draw_lines() const;
+	void add(Point p1, Point p2);
+};
+*/
 
 void before_page445(void)
 {
