@@ -5,18 +5,26 @@
 int main(int argc, char** argv)
 {
 	using namespace Graph_lib;
-
 	Point p{ 100,100 };
 
-	Simple_window win1{ p,600,400,"two lines" };
+	Simple_window win3{ p,600,400,"two lines" };
 	Lines x;
 
-	x.add(Point{ 100,100 }, Point{ 200,100 });
-	x.add(Point{ 150,50 }, Point{ 150,150 });
+	int x_size = win3.x_max();
+	int y_size = win3.y_max();
+	int x_grid = 120;
+	int y_grid = 40;
 
-	win1.attach(x);
+	Lines grid;
+	for (int x = x_grid;x < x_size;x += x_grid)
+		grid.add(Point{ x,0 }, Point{ x,y_size });
 	
-	win1.wait_for_button();
+	for (int y = y_grid;y < y_size;y += y_grid)
+		grid.add(Point{ 0,y }, Point{ x_size, y });
+
+	win3.attach(grid);
+	
+	win3.wait_for_button();
 
 
 	return 0;
