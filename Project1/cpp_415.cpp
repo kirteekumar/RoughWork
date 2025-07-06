@@ -8,7 +8,8 @@ int main(int argc, char** argv)
 	Point p{ 100,100 };
 
 	Simple_window win3{ p,600,400,"two lines" };
-	Lines x;
+	//Graph_lib::Lines x = { {100,100},{200,100} };
+	//Lines xs = {{100,100},{200,100}, {100,100},{200,100}};
 
 	int x_size = win3.x_max();
 	int y_size = win3.y_max();
@@ -16,6 +17,8 @@ int main(int argc, char** argv)
 	int y_grid = 40;
 
 	Lines grid;
+	grid.set_color(Color::red);
+
 	for (int x = x_grid;x < x_size;x += x_grid)
 		grid.add(Point{ x,0 }, Point{ x,y_size });
 	
