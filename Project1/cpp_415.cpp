@@ -25,6 +25,8 @@ int main(int argc, char** argv)
 	for (int y = y_grid;y < y_size;y += y_grid)
 		grid.add(Point{ 0,y }, Point{ x_size, y });
 
+	grid.set_style(Line_style{ Line_style::dash, 2 });
+
 	win3.attach(grid);
 	
 	win3.wait_for_button();
