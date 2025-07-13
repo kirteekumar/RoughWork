@@ -35,9 +35,12 @@ int main(int argc, char** argv)
 	cpl.add(Point(250, 250));
 	cpl.add(Point(300, 200));
 
-	//cpl.add(Point(100, 250));
+	cpl.add(Point(100, 250));
 
-	win3.attach(cpl);
+	Graph_lib::Rectangle rect00 { Point{50, 100}, 200, 100 };
+	rect00.set_fill_color(Color::yellow);
+
+	win3.attach(rect00);
 
 	//Closed_polyline cpl = { {100,100},{150,200}, {250,250},{300,200} };
 
