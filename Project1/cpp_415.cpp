@@ -55,9 +55,17 @@ int main(int argc, char** argv)
 		for (int j = 0;j < 16;++j) {
 			vr.push_back(new Graph_lib::Rectangle{ Point{i * 20,j * 20},20,20 });
 			vr[vr.size() - 1].set_fill_color(Color( i * 16 + j ));
-			win3.attach(vr[vr.size() - 1]);
+			//win3.attach(vr[vr.size() - 1]);
 		}
 
+	Text t{ Point{200,200}, "A closed polyline"};
+	t.set_color(Color::blue);
+
+	Circle c1{ Point{100,200},50 };
+	Circle c2{ Point{100,200},25 };
+
+	win3.attach(c1);
+	win3.attach(c2);
 
 	//Closed_polyline cpl = { {100,100},{150,200}, {250,250},{300,200} };
 
