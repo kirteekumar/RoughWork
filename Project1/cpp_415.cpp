@@ -64,6 +64,22 @@ int main(int argc, char** argv)
 	Circle c1{ Point{100,200},50 };
 	Circle c2{ Point{100,200},25 };
 
+	Graph_lib::Ellipse e1{ Point{200,200},50,50 };
+
+	Graph_lib::Ellipse e2{ Point{200,200},100,50 }; 
+	Graph_lib::Ellipse e3{ Point{200,200},100,150 };
+	
+
+	Marked_polyline mpl{ "1234" };
+	mpl.add(Point{ 100,100 });
+	mpl.add(Point{ 150,200 });
+	mpl.add(Point{ 250,250 });
+	mpl.add(Point{ 300,200 });
+
+	win3.attach(mpl);
+	win3.attach(e1);
+	win3.attach(e2);
+	win3.attach(e3);
 	win3.attach(c1);
 	win3.attach(c2);
 
