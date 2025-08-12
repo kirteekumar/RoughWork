@@ -76,10 +76,26 @@ int main(int argc, char** argv)
 	mpl.add(Point{ 250,250 });
 	mpl.add(Point{ 300,200 });
 
-	win3.attach(mpl);
-	win3.attach(e1);
-	win3.attach(e2);
-	win3.attach(e3);
+	Graph_lib::Marks pp{ "x" };
+
+
+	
+	pp.add(Point(100, 100));
+	pp.add(Point(150, 200));
+	pp.add(Point(250, 250));
+	pp.add(Point(300, 200));
+
+
+
+	Graph_lib::Mark m1{ Point{100,200},'x' };
+	Mark m3{ Point{200,200},'z' };
+	c1.set_color(Color::blue);
+	c2.set_color(Color::red);
+
+	win3.attach(m1);
+	//win3.attach(e1);
+	//win3.attach(e2);
+	//win3.attach(e3);
 	win3.attach(c1);
 	win3.attach(c2);
 
