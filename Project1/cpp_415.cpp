@@ -7,6 +7,7 @@ int main(int argc, char** argv)
 	using namespace Graph_lib;
 	Point p{ 100,100 };
 
+
 	Simple_window win3{ p,600,400,"two lines" };
 	//Graph_lib::Lines x = { {100,100},{200,100} };
 	//Lines xs = {{100,100},{200,100}, {100,100},{200,100}};
@@ -98,6 +99,15 @@ int main(int argc, char** argv)
 	//win3.attach(e3);
 	win3.attach(c1);
 	win3.attach(c2);
+
+	Simple_window win(Point(100, 100), 600, 400, "Images");
+
+	Image rita(Point(0, 0), "rita.jpg");
+	Image path(Point(0, 0), "rita_path.gif");
+	path.set_mask(Point(50, 250), 600, 400); // select likely landfall
+
+	win.attach(path);
+	win.attach(rita);
 
 	//Closed_polyline cpl = { {100,100},{150,200}, {250,250},{300,200} };
 
